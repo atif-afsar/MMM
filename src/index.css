@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-headline: 'Playfair Display', Georgia, serif;
+    --font-body: 'Manrope', system-ui, -apple-system, sans-serif;
+    
+    /* Stitch "Regal Nuptial Calm" Palette */
+    --color-primary: #0c2720;
+    --color-primary-container: #233d35;
+    --color-on-primary: #ffffff;
+    --color-secondary: #58615a;
+    --color-secondary-container: #dce5dc;
+    --color-tertiary-fixed: #fae0a9;
+    --color-tertiary-fixed-dim: #ddc48f;
+    --color-on-tertiary-fixed-variant: #56441c;
+    --color-bg: #f9f9f6;
+    --color-surface-low: #f4f4f0;
+    --color-surface: #eeeeeb;
+    --color-surface-high: #e8e8e5;
+    --color-surface-highest: #e2e3df;
+    --color-surface-card: #ffffff;
+    --color-tint: #49645b;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: #1a1c1a;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.font-serif-royal,
+.font-headline {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-body-ui,
+.font-sans-ui {
+  font-family: 'Manrope', system-ui, sans-serif;
+}
+
+.font-stat-currency {
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-feature-settings: "tnum" 1;
+}
+
+/* Subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1c8c4;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #727975;
+}
